@@ -1,2 +1,3 @@
-apt-get install proot
-git clone https://github.com/proot-me/proot-distro.git && cd proot-distro && ./proot-distro install alpine
+#!/bin/bash
+docker build -t my-alpine .
+docker save -o /tmp/my-alpine.tar my-alpine
