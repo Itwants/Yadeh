@@ -6,7 +6,7 @@ USER root
 
 # Install build dependencies
 RUN apt-get update && \
-    apt-get install proot qemu-user-static
+    apt-get install -y proot qemu-user-static
     
 USER $NB_UID
 
