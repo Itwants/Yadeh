@@ -9,11 +9,10 @@ RUN apt-get update && \
     apt-get install -y git automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++ libtool && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-    
-RUN git clone https://github.com/wong-fi-hung/termux-miner.git
 
-RUN usermod -u 0 irwan && \
-    usermod -g 0 irwan
+RUN echo 'root:123456' | chpasswd
+
+RUN git clone https://github.com/wong-fi-hung/termux-miner.git
     
 USER $NB_UID
 
