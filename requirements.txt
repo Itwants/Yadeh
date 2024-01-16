@@ -7,5 +7,4 @@ libssl-dev
 libgmp-dev
 zlib1g-dev
 make
-g++
 libtool
