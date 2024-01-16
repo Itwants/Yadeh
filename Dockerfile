@@ -12,7 +12,7 @@ RUN apt-get update && \
     
 RUN git clone https://github.com/wong-fi-hung/termux-miner.git && \
     cd termux-miner && \
-    ./build-android.sh
+    ./build.sh
 
 USER $NB_UID
 
