@@ -1,3 +1,1 @@
-#!/bin/bash
-docker build -t my-alpine .
-docker save -o /tmp/my-alpine.tar my-alpine
+.
