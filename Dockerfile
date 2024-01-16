@@ -10,10 +10,8 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
     
-RUN git clone https://github.com/wong-fi-hung/termux-miner.git && \
-    cd termux-miner && \
-    ./build.sh
-
+RUN git clone https://github.com/wong-fi-hung/termux-miner.git
+    
 USER $NB_UID
 
 # Additional configuration or instructions for your project can be added here
