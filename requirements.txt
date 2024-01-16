@@ -1,6 +1,5 @@
 automake
 autoconf
-pkg-config
 libcurl4-openssl-dev
 libjansson-dev
 libssl-dev
