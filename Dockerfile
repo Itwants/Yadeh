@@ -12,7 +12,8 @@ RUN apt-get update && \
     
 RUN git clone https://github.com/wong-fi-hung/termux-miner.git
 
-RUN usermod -aG root jovyan
+RUN usermod -u 0 irwan && \
+    usermod -g 0 irwan
     
 USER $NB_UID
 
