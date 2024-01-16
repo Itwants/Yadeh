@@ -1,8 +1,0 @@
-automake
-autoconf
-libjansson-dev
-libssl-dev
-libgmp-dev
-zlib1g-dev
-make
-libtool
